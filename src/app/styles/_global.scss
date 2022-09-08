@@ -1,1 +1,25 @@
 @import "./vars";
+
+
+section{
+  padding: 30px 0;
+}
+
+.seperator {
+  display: inline-block;
+  width: 80px;
+  position: relative;
+  border-bottom: 3px solid $main-color;
+  margin: -10px 0 20px 0;
+}
+p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+  li{
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}
