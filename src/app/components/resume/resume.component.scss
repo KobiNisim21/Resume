@@ -1,0 +1,55 @@
+@import "../../styles/_vars";
+
+.resume{
+  ul{
+    padding: 0;
+    li{
+      padding: 0 10px;
+      i {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__skills{
+    background: #e0e8ff;
+    padding: 30px 0;
+  }
+
+  &__resume-item{
+    border-left: 2px solid $main-color;
+    padding-left: 25px;
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -9px;
+      border:  2px solid $main-color;
+      background-color: #fff;
+      border-radius: 50px;
+      width: 15px;
+      height: 15px;
+    }
+
+
+    ul{
+      padding:0 24px;
+      list-style: disc;
+    }
+
+    h5 {
+      position: relative;
+      background-color: #e4edf9;
+      width: 125px;
+      height: 35px;
+      padding: 5px 10px 10px 15px;
+    }
+
+    h6{
+      font-weight: bold;
+      padding: 5px 0 10px 0;
+    }
+  }
+}
