@@ -12,7 +12,11 @@
   }
 
   &__skills{
-    background: #e0e8ff;
+    background: $section-bg;
+    padding: 30px 0;
+  }
+
+  &__details{
     padding: 30px 0;
   }
 
@@ -37,6 +41,7 @@
     ul{
       padding:0 24px;
       list-style: disc;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     }
 
     h5 {
