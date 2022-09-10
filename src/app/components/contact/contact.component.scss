@@ -7,6 +7,7 @@
       padding: 0;
       li{
         font-size: 1.5rem;
+        margin-bottom: 15px;
         @media screen and (max-width:1600px) {
           font-size: 1rem;
         }
@@ -32,6 +33,11 @@
   ::ng-deep{
     mat-form-field{
       width: 100%;
+    }
+  }
+  &__form{
+    button{
+      background: $main-color;
     }
   }
 }

@@ -7,6 +7,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 5px;
+    margin-bottom: 15px;
     &:hover{
       .portfolio__item-content {
       opacity: 1;
@@ -29,6 +30,18 @@
     transform: scale(0.8);
     opacity: 0;
     transition: 0.3s all ease;
+
+    @media screen and (max-width:991px){
+      height: 25%;
+      top: auto;
+      bottom: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      transform: scale(1);
+      opacity: 1;
+      transition: 0.3 all ease;
+    }
 
     &::before{
       content: "";
@@ -54,6 +67,6 @@
 
   &__item-desc{
     display: block;
-    margin-bottom: 15px;
+
   }
 }
