@@ -3,6 +3,10 @@
 .portfolio{
   background: $section-bg;
 
+  h2{
+    font-size: 2rem;
+  }
+
   &__item{
     position: relative;
     overflow: hidden;
