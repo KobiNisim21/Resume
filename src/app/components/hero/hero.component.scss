@@ -15,10 +15,6 @@
 
   &__content {
 
-    @media screen and (max-width:1600px) {
-      width: 50%;
-    }
-
     .typewriter h2 {
       overflow: hidden; /* Ensures the content is not revealed until the animation */
       border-right: .15em solid orange; /* The typwriter cursor */
@@ -51,8 +47,10 @@
     }
     h2{
       font-size: 3rem;
+      @media screen and (max-width:1600px) {
+        font-size: 1.5rem;
+      }
       line-height: 1;
-      font-weight: 500;
       color: #171717;
     }
     .main-color{
