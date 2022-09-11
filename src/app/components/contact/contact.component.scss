@@ -1,6 +1,11 @@
 @import "../../styles/_vars";
 
 .contact{
+
+  h2{
+    font-size: 2rem;
+  }
+
   &__info{
     ul{
       list-style: none;
@@ -14,10 +19,6 @@
         a{
           color: #171717;
           text-decoration: none;
-        }
-
-        h2{
-          font-size: 2rem;
         }
 
         i{
