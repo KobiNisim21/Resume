@@ -55,9 +55,13 @@
           a{
             color: #fff;
             text-decoration: none;
+            padding-left: 10px;
             &:hover {
               color: $main-color;
             }
+          }
+          i{
+            padding-left: 10px;
           }
         }
       }
