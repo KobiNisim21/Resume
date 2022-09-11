@@ -15,7 +15,9 @@
 
   &__content {
 
-
+    @media screen and (max-width:1600px) {
+      width: 50%;
+    }
 
     .typewriter h2 {
       overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -49,6 +51,8 @@
     }
     h2{
       font-size: 3rem;
+      line-height: 1;
+      font-weight: 500;
       color: #171717;
     }
     .main-color{
