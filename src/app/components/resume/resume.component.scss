@@ -7,9 +7,11 @@
       padding: 0 10px;
       i {
         font-size: 4rem;
-      }
+        @media screen and (max-width:991px) {
+          font-size: 1rem;}
     }
   }
+}
 
   &__skills{
     background: $section-bg;
