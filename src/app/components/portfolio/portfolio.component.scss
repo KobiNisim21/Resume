@@ -20,6 +20,7 @@
     }
   }
 
+
   &__item-content{
     position: absolute;
     width: 100%;
@@ -71,6 +72,8 @@
 
   &__item-desc{
     display: block;
+    margin-left: 10px;
+    margin-right: 10px;
 
   }
 }
