@@ -12,6 +12,7 @@
           font-size: 1rem;}
     }
   }
+
 }
 a{
   color: #025ba4;
@@ -52,6 +53,10 @@ h2{
       height: 15px;
     }
 
+    li::marker {
+      content: "⭐";
+      color: $main-color;
+    }
 
     ul{
       padding:0 24px;
