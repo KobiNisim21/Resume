@@ -74,6 +74,9 @@
     display: block;
     margin-left: 10px;
     margin-right: 10px;
-
   }
+
+  .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+    background-color: #EFEFEF;
+}
 }
