@@ -12,10 +12,10 @@
           font-size: 1rem;}
     }
   }
-
 }
 a{
-  color: #025ba4;
+  color: $main-color;
+  font-weight: 800;
   text-decoration: none;
 }
 
@@ -27,6 +27,7 @@ h2{
   &__skills{
     background: $section-bg;
     padding: 30px 0;
+
   }
 
   &__details{
@@ -83,4 +84,12 @@ h2{
       padding: 5px 0 10px 0;
     }
   }
+
+  .icon{
+    width: 100%;
+    transition: filter 0.4s ease;
+}
+.icon:hover{
+    filter: blur(10px);
+}
 }
