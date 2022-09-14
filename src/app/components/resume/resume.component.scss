@@ -4,15 +4,32 @@
   ul{
     padding: 0;
     li{
+      min-width: 84px;
+      display: grid;
+      text-align: center;
       padding: 0 10px;
       font-size: 1rem;
+      .desc_icon{
+        position: relative;
+        font-size: 1rem;
+        opacity: 0;
+        }
       i {
         font-size: 4rem;
         @media screen and (max-width:991px) {
           font-size: 1rem;}
+        }
+     }
+  li:hover{
+    .desc_icon{
+      opacity: 1;
+      font-weight: 900;
+      font-style: oblique;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     }
-  }
 }
+  }
+
 a{
   color: $main-color;
   font-weight: 800;
@@ -27,7 +44,6 @@ h2{
   &__skills{
     background: $section-bg;
     padding: 30px 0;
-
   }
 
   &__details{
@@ -85,11 +101,15 @@ h2{
     }
   }
 
+
   .icon{
     width: 100%;
     transition: filter 0.4s ease;
-}
+  }
 .icon:hover{
     filter: blur(10px);
-}
+  }
+
+
+
 }
