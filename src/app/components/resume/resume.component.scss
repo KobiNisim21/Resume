@@ -7,7 +7,6 @@
     padding: 30px 0;
   ul {
     padding: 0;
-
     li {
       min-width: 84px;
       display: grid;
@@ -38,7 +37,13 @@
         font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
       }
     }
-  }}
+  }
+  p{
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-weight: 200;
+    color: #9d9d9f;
+  }
+}
 
   a {
     color: $main-color;
