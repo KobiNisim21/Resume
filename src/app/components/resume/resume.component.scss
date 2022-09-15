@@ -1,23 +1,25 @@
 @import "../../styles/_vars";
 
 .resume{
+
   ul{
     padding: 0;
     li{
       min-width: 84px;
       display: grid;
-      text-align: center;
       padding: 0 10px;
       font-size: 1rem;
       .desc_icon{
         position: relative;
         font-size: 1rem;
+        text-align: center;
         opacity: 0;
         }
       i {
         font-size: 4rem;
         @media screen and (max-width:991px) {
-          font-size: 1rem;}
+          font-size: 1.2rem;
+           }
         }
      }
   li:hover{
@@ -51,6 +53,7 @@ h2{
     h4{
       font-size: 1.33rem;
     }
+
   }
 
   &__resume-item{
@@ -70,15 +73,16 @@ h2{
       height: 15px;
     }
 
-    li::marker {
-      content: "⭐";
-      color: $main-color;
-    }
+
 
     ul{
       padding:0 24px;
       list-style: disc;
       font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+    li ::marker {
+      content: "⭐";
+      color: $main-color;
     }
 
     h4{
@@ -110,6 +114,9 @@ h2{
     filter: blur(10px);
   }
 
-
+  li::marker {
+    content: "⭐";
+    color: $main-color;
+  }
 
 }
