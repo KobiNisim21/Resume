@@ -1,91 +1,87 @@
 @import "../../styles/_vars";
 
-.resume{
-
-  ul{
+.resume {
+  &__skills{
+    background: $section-bg;
+    padding: 30px 0;
+  ul {
     padding: 0;
-    li{
+
+    li {
       min-width: 84px;
       display: grid;
       padding: 0 10px;
       font-size: 1rem;
-      .desc_icon{
+      .desc_icon {
         position: relative;
         font-size: 1rem;
         text-align: center;
         opacity: 0;
-        }
+      }
       i {
         font-size: 4rem;
-        @media screen and (max-width:991px) {
+        @media screen and (max-width: 991px) {
           font-size: 1.2rem;
-           }
         }
-     }
-  li:hover{
-    .desc_icon{
-      opacity: 1;
-      font-weight: 900;
-      font-style: oblique;
-      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      }
     }
-}
+    li:hover {
+      .desc_icon {
+        opacity: 1;
+        font-weight: 900;
+        font-style: oblique;
+        font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      }
+    }
+  }}
+
+  a {
+    color: $main-color;
+    font-weight: 800;
+    text-decoration: none;
   }
 
-a{
-  color: $main-color;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-h2{
-  margin-top: 15px;
-  font-size: 2rem;
-}
-
-  &__skills{
-    background: $section-bg;
-    padding: 30px 0;
+  h2 {
+    margin-top: 15px;
+    font-size: 2rem;
   }
 
-  &__details{
+  &__details {
     padding: 30px 0;
-    h4{
+    h4 {
       font-size: 1.33rem;
     }
-
   }
 
-  &__resume-item{
+  &__resume-item {
     border-left: 2px solid $main-color;
     padding-left: 25px;
     position: relative;
+    li::marker {
+      content: "⭐";
+      font-size: medium;
+      color: $main-color;
+    }
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 0;
       left: -9px;
-      border:  2px solid $main-color;
+      border: 2px solid $main-color;
       background-color: #fff;
       border-radius: 50px;
       width: 15px;
       height: 15px;
     }
 
-
-
-    ul{
-      padding:0 24px;
+    ul {
+      padding: 0 24px;
       list-style: disc;
-      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    }
-    li ::marker {
-      content: "⭐";
-      color: $main-color;
+      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     }
 
-    h4{
+    h4 {
       font-size: 1.33rem;
     }
 
@@ -98,25 +94,21 @@ h2{
       margin-bottom: 10px;
     }
 
-    h6{
+    h6 {
       font-weight: bold;
       font-size: 1rem;
-      padding: 5px 0 10px 0;
+      padding: 10px 0 5px 0;
     }
+
   }
 
 
-  .icon{
+
+  .icon {
     width: 100%;
     transition: filter 0.4s ease;
   }
-.icon:hover{
+  .icon:hover {
     filter: blur(10px);
   }
-
-  li::marker {
-    content: "⭐";
-    color: $main-color;
-  }
-
 }
