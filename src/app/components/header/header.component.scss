@@ -91,4 +91,21 @@
   }
 }
 
+p{
+  font-size: 0.7rem;
+  padding: 90% 0 0 10%;
+  @media screen and (max-width:1600px) {
+  padding: 60% 0 0 10%;}
+}
+
+a {
+  color: $main-color;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #fff;
+}
+
 
