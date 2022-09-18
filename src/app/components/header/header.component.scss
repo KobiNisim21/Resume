@@ -94,8 +94,10 @@
 p{
   font-size: 0.7rem;
   padding: 90% 0 0 10%;
-  @media screen and (max-width:1600px) {
-  padding: 60% 0 0 10%;}
+  @media screen and (max-height:970px) {
+  padding: 75% 0 0 10%;}
+  @media screen and (max-width:991px) {
+  padding: 10% 0 0 10%;}
 }
 
 a {
