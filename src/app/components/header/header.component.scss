@@ -1,6 +1,6 @@
 @import "../../styles/_vars";
 
-.header{
+.header {
   width: 300px;
   position: fixed;
   top: 0;
@@ -11,7 +11,7 @@
   transition: 0.2 all ease;
   z-index: 999;
 
-  &__image-container{
+  &__image-container {
     margin: 50px auto 10px;
     width: 150px;
     height: 150px;
@@ -19,7 +19,7 @@
     overflow: hidden;
   }
 
-  &__links{
+  &__links {
     margin-top: -15px;
     .d-flex {
       justify-content: space-evenly;
@@ -29,30 +29,30 @@
       color: #fff;
       transition: 0.2s all ease;
 
-      &:hover{
+      &:hover {
         color: $main-color;
       }
     }
   }
 
-  .row{
-    h2{
+  .row {
+    h2 {
       margin-bottom: 0;
       font-size: 2rem;
     }
-    h4{
+    h4 {
       font-size: 1.5rem;
     }
   }
 
-  &__nav{
+  &__nav {
     margin-top: 30px;
-    nav{
-      ul{
+    nav {
+      ul {
         list-style: none;
-        li{
+        li {
           padding: 10px 0;
-          a{
+          a {
             color: #fff;
             text-decoration: none;
             padding-left: 10px;
@@ -60,7 +60,7 @@
               color: $main-color;
             }
           }
-          i{
+          i {
             padding-left: 10px;
           }
         }
@@ -69,14 +69,13 @@
   }
   @media screen and (max-width: 991px) {
     left: -300px;
-    &--active{
+    &--active {
       left: 0;
     }
   }
 }
 
-
-.menu-btn-container{
+.menu-btn-container {
   display: none;
   button {
     position: fixed;
@@ -86,18 +85,24 @@
     z-index: 999;
   }
 
-  @media screen and (max-width:991px) {
+  @media screen and (max-width: 991px) {
     display: block;
   }
 }
 
-p{
+p {
   font-size: 0.7rem;
   padding: 90% 0 0 10%;
-  @media screen and (max-height:970px) {
-  padding: 75% 0 0 10%;}
-  @media screen and (max-width:991px) {
-  padding: 10% 0 0 10%;}
+  @media screen and (max-height: 970px) {
+    padding: 75% 0 0 10%;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 10% 0 0 10%;
+  }
+  @media screen and (min-width: 2000px) {
+    padding: 0 0 0 10%;
+    margin-top: 210%;
+  }
 }
 
 a {
@@ -106,8 +111,6 @@ a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: #fff;
 }
-
-
