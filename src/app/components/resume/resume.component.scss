@@ -1,62 +1,63 @@
 @import "../../styles/_vars";
 
 .resume {
-  &__skills{
+  &__skills {
     overflow: auto;
     background: $section-bg;
     padding: 30px 0;
-  ul {
-    padding: 0;
-    li {
-      min-width: 84px;
-      display: grid;
-      padding: 0 10px;
-      font-size: 1rem;
-      .desc_icon {
-        position: relative;
+    ul {
+      padding: 0;
+      li {
+        min-width: 84px;
+        display: grid;
+        padding: 0 10px;
         font-size: 1rem;
-        @media screen and (max-width: 991px) {
-          font-size: 0.5rem;
-          margin-right: 25px;
+        .desc_icon {
+          position: relative;
+          font-size: 1rem;
+          @media screen and (max-width: 991px) {
+            font-size: 0.5rem;
+            margin-right: 25px;
+          }
+          text-align: center;
+          opacity: 0;
         }
-        text-align: center;
-        opacity: 0;
+        i {
+          font-size: 4rem;
+          @media screen and (max-width: 991px) {
+            font-size: 2.5rem;
+          }
+        }
       }
-      i {
-        font-size: 4rem;
-        @media screen and (max-width: 991px) {
-          font-size: 2.5rem;
+      li:hover {
+        .desc_icon {
+          opacity: 1;
+          font-weight: 900;
+          font-style: oblique;
+          font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
         }
       }
     }
-    li:hover {
-      .desc_icon {
-        opacity: 1;
-        font-weight: 900;
-        font-style: oblique;
-        font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-      }
-    }
-  }
 
-  p{
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-    font-weight: 200;
-    color: #9d9d9f;
-    @media screen and (max-width: 991px) {
+    p {
+      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      font-weight: 200;
+      color: #9d9d9f;
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      font-weight: 200;
+      color: #9d9d9f;
       display: none;
+      @media screen and (max-width: 991px) {
+        display: block;
+      }
     }
   }
-
-  h3{
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-    font-weight: 200;
-    color: #9d9d9f;
-    display: none;
-    @media screen and (max-width: 991px) {display: block;}
-  }
-}
-
 
   a {
     color: $main-color;
@@ -64,7 +65,7 @@
     text-decoration: none;
   }
 
-  a:hover{
+  a:hover {
     color: #050505;
   }
 
@@ -85,7 +86,7 @@
     padding-left: 25px;
     position: relative;
     li::marker {
-      content: "⚪";
+      content: "⚪ ";
       font-size: medium;
       color: $main-color;
     }
@@ -126,7 +127,6 @@
       font-size: 1rem;
       padding: 10px 0 5px 0;
     }
-
   }
 
   .icon {
